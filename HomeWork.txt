@@ -3,3 +3,19 @@
 3) WAP : given a no : odd or  even?
 4) WAP : given 3 no. : print maximum of three
 5) WAP : given 2 no: swap : with or without using third variable
+
+----- Arrays----
+
+1) *
+   * *
+   * * *
+   * * * *
+   * * *  *
+   
+ 2) Given a num : 23 , and an array {-9,55,78,23,89} : : (Present , 3) else Not found
+ 
+ 3) Given an array : {-9,55,78,23,89} , Max : 89
+ 
+ 4) Given an array : {-9,55,78,23,89} , Min : -9
+ 
+ 5) Print the sum of values of the array
