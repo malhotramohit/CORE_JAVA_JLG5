@@ -1,8 +1,9 @@
-1) Hands Data types print , litral plus casting
+1) Hands on  Data types create and print them  , litral plus casting
 2) Hackrank problems : https://gyansetu-java.gitbook.io/core-java/java-class/problems
 3) WAP : given a no : odd or  even?
 4) WAP : given 3 no. : print maximum of three
 5) WAP : given 2 no: swap : with or without using third variable
+<<<<<<< HEAD
 
 ----- Arrays----
 
@@ -19,3 +20,5 @@
  4) Given an array : {-9,55,78,23,89} , Min : -9
  
  5) Print the sum of values of the array
+=======
+>>>>>>> c19a4a2a12309e6faa415c557463f3e00d5ef50a
