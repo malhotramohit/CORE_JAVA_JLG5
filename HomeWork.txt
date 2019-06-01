@@ -22,3 +22,9 @@
  5) Print the sum of values of the array
 =======
 >>>>>>> c19a4a2a12309e6faa415c557463f3e00d5ef50a
+
+
+--- 
+1) WAP for imperative fact and T(n) and S(n)
+2) WAP Binary Search  (sorted array) : imperative plus recurssive
+3) WAP fibnoacci series , n =5 : 0 1 2 3 5  , n= 7 : 0 1 2 3 5 8 13 : imperative Plus recursion
