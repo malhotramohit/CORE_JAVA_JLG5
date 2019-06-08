@@ -40,3 +40,29 @@
  --
  https://codingbat.com/java/String-1
  
+ 
+ 
+ -- shohom:
+ 1) string1
+ 2) nested for - while for any pattern
+ 
+ 
+ ---
+ /**
+ 
+ Problem 1: 
+ Area of triangle: 
+ 1) scan 3 sides (a,b,c)
+ 2) write code to check the type of triangle : 1) comparing sides : eq, right, isco , scalene : herons formula
+ 3) circle area
+ 
+ p2 :Calculator : Add 2 operands
+ 			  Sub
+ 			  Mul
+ 			  Div
+ 			  Modulo
+ 
+ */
+ 3) given a num : print it is prime or not?
+ 3) any 5 problems from ch4,5,7 - 15 problems 
+ link :https://practiceit.cs.washington.edu/problem/list
