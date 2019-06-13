@@ -66,3 +66,8 @@
  3) given a num : print it is prime or not?
  3) any 5 problems from ch4,5,7 - 15 problems 
  link :https://practiceit.cs.washington.edu/problem/list
+ 
+ 
+ ----OOPS----
+ 
+ 1) https://drive.google.com/drive/u/0/folders/1qWwdBVXjXiKT3iH8jnAxJs_FugxxJ8KR
