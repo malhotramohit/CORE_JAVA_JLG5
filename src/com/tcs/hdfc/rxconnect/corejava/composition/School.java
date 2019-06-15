@@ -1,6 +1,5 @@
 package com.tcs.hdfc.rxconnect.corejava.composition;
 
-
 // POJO L plain old java object /// bean // model
 class Student {
 
@@ -55,7 +54,12 @@ class Student {
 	}
 
 	public void setAge(int age) {
-		this.age = age;
+		if (age < 0) {
+			System.out.println("Age cannot be less than 0");
+		} else {
+			this.age = age;
+		}
+
 	}
 
 	public String getColor() {
@@ -76,7 +80,6 @@ class Student {
 
 }
 
-
 // aggregation
 public class School {
 
@@ -87,7 +90,7 @@ public class School {
 		Student std1 = new Student();
 		System.out.println(std1.toString());
 		std1.setName("John");
-		std1.setAge(23);
+		std1.setAge(-23);
 		std1.setColor("Fair");
 		std1.setSex('M');
 		String name = std1.getName();
@@ -95,8 +98,9 @@ public class School {
 		System.out.println(std1.getAge());
 		System.out.println(std1.toString());
 
-		Student std2 = new Student("Sophia",25,"Fair",'F');
+		Student std2 = new Student("Sophia", 25, "Fair", 'F');
 		System.out.println(std2.toString());
+		System.out.println(std2);
 
 	}
 

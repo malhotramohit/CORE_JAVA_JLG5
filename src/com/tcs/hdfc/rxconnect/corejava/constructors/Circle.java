@@ -1,20 +1,50 @@
 package com.tcs.hdfc.rxconnect.corejava.constructors;
 
+//pojo bean model
 public class Circle {
 
-	double radius;
+	// instance var or non static var
+	private double radius;
+	private String color;
 
-	Circle(double radiusParam) {
-		radius = radiusParam;
+	public Circle() {
+		radius = 1.0;
+		color = "red";
 	}
 
-	// Circle(){
-	//
-	// }
+	public Circle(double r) {
+		radius = r;
+		color = "red";
+	}
 
-	public static void main(String[] args) {
-		Circle circle = new Circle(89.24);
-		// Circle circle1 = new Circle();
+	public Circle(double radius, String color) {
+		this.radius = radius;
+		this.color = color;
+	}
+
+	public double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public double getArea() {
+		return Math.PI * radius * radius;
 
 	}
+	
+	public String toString() {
+		return "Circle[radius="+radius+" ,color="+color+"]";
+	}
+
 }
