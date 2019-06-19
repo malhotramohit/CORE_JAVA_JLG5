@@ -80,3 +80,8 @@
  2) 1.3  Ex: The Rectangle Class
  3) 1.4  Ex: The Employee Class
  4) 1.5  Ex: The InvoiceItem Class
+ 
+ ---19 june 2019:
+ 
+ 12.1  Ex: The Author and Book Classes (An Introduction to OOP Composition)
+ TRY: part

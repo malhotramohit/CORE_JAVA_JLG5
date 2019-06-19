@@ -13,8 +13,12 @@ class Student {
 	// 1) No return type
 	// 2) Name should be same as class name
 	// default constructor
-	Student() {
+	public Student() {
 
+	}
+
+	public void m1() {
+		Student student = new Student();
 	}
 
 	Student(String name, int age, String color, char sex) {
@@ -87,9 +91,14 @@ public class School {
 
 		// classname std1= new classname();
 
-		Student std1 = new Student();
+		Student std1 = new Student();// new keyword : creaete new obj?
+		// construct ?:
+		// special ?
+		// name is same as clas name
+		// no return type
+
 		System.out.println(std1.toString());
-		std1.setName("John");
+		std1.setName("John");//
 		std1.setAge(-23);
 		std1.setColor("Fair");
 		std1.setSex('M');
