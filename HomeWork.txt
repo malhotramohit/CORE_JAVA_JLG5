@@ -85,3 +85,8 @@
  
  12.1  Ex: The Author and Book Classes (An Introduction to OOP Composition)
  TRY: part
+ 
+ 
+ ----24 june 2019---
+ 1) Practice and create your own version of  the below:
+ https://gyansetu-java.gitbook.io/core-java/15-static-keyword
