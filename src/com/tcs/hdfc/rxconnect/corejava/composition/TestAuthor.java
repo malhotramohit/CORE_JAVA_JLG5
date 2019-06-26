@@ -1,5 +1,7 @@
 package com.tcs.hdfc.rxconnect.corejava.composition;
 
+import java.util.Arrays;
+
 class Author {
 
 	private String name;
@@ -91,13 +93,21 @@ class Book {
 		this.qty = qty;
 	}
 
-	public String toString() {
-		String authorsToString = authors[0].toString();
-		for (int i = 1; i < authors.length; i++) {
-			authorsToString = authorsToString + authors[i].toString();
-		}
+	
+	
+//	public String toString() {
+//		String authorsToString = authors[0].toString();
+//		for (int i = 1; i < authors.length; i++) {
+//			authorsToString = authorsToString + authors[i].toString();
+//		}
+//
+//		return "Book[name=" + name + ",authors=" + "{ " + authorsToString + " }" + ",price=" + price + ",qty=" + qty
+//				+ "]";
+//	}
 
-		return "Book[name=" + name + ",authors=" + "{ " + authorsToString + " }" + ",price=" + price + ",qty=" + qty
+	@Override
+	public String toString() {
+		return "Book [name=" + name + ", price=" + price + ", qty=" + qty + ", authors=" + Arrays.toString(authors)
 				+ "]";
 	}
 

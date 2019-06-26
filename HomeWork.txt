@@ -90,3 +90,9 @@
  ----24 june 2019---
  1) Practice and create your own version of  the below:
  https://gyansetu-java.gitbook.io/core-java/15-static-keyword
+ 
+ 
+ ---26 june 2019---
+ 1) 2.5  Ex: The MyTriangle and MyPoint Classes
+ 2) 2.6  Ex: The MyRectangle and MyPoint Classes
+ 
