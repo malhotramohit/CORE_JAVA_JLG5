@@ -96,3 +96,14 @@
  1) 2.5  Ex: The MyTriangle and MyPoint Classes
  2) 2.6  Ex: The MyRectangle and MyPoint Classes
  
+ ---28 june 2019---
+ 1) Single Level inheritance:  and multi k example
+ 
+ --- 1 july 2019
+ https://gyansetu-java.gitbook.io/core-java/problems
+ 1) SINGLE INHERITANCE tech gig
+ 2) One Two Three tech gig : 
+ 
+ 
+ 
+ 
