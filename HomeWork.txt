@@ -104,6 +104,9 @@
  1) SINGLE INHERITANCE tech gig
  2) One Two Three tech gig : 
  
+ -- 3 july 2019--
+ 1) 4.2  Ex: Superclass Person and its subclasses se --- 4.5
+ 2) https://gyansetu-java.gitbook.io/core-java/abstract/problems
  
  
  
