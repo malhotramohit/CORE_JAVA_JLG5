@@ -1,6 +1,6 @@
 package com.tcs.hdfc.bancs.inheritance;
 
-class Circle {
+ class Circle {
 	private double radius;
 	private String color;
 
@@ -34,7 +34,7 @@ class Circle {
 		this.color = color;
 	}
 
-	public double getArea() {
+	public  double getArea() {
 		return Math.PI * radius * radius;
 	}
 

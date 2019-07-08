@@ -1,31 +1,56 @@
 package com.tcs.hdfc.bancs.inheritance;
 
-// abstract class : 
-// rule 1: If any of the method is abstract then your class 
-// should be abstract
+// abstract  method : method with only dec , without defn
+// methods and class
+// abstract field
+
+// Rule 1: If your class if having atleast one abstract method then
+// your class should be abstract
+// Rule 2: If your class is abstract then it can or cannot have abstract methods
+// Rule 3: Can't create objects of Abstract class
+
 abstract class Shape {
 
-	// it will have no def , only decla
-	public abstract void getArea();
+	 int i = 0;
+
+	abstract void getArea();
+
+	abstract double getPerimeter();
+
+	void printSomething() {
+		System.out.println("Something");
+	}
 }
 
 class Triangle extends Shape {
-	public void getArea() {
-		System.out.println("herons formula");
+	void getArea() {
+		System.out.println("Triangle area");
+	}
+
+	double getPerimeter() {
+		System.out.println("Triangle peri");
+		return 0;
 	}
 }
 
 class Parabola extends Shape {
-	public void getArea() {
-		System.out.println("parabola rea");
+
+	@Override
+	double getPerimeter() {
+		System.out.println("Shape area");
+		return 0;
+	}
+
+	@Override
+	void getArea() {
+
 	}
 }
 
 public class TestAbstract {
 	public static void main(String[] args) {
-		
-		//Shape shape = new Shape();
-		Triangle  triangle =  new Triangle();
+
+		Triangle triangle = new Triangle();
 		triangle.getArea();
 	}
 

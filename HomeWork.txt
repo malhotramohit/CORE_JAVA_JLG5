@@ -108,5 +108,10 @@
  1) 4.2  Ex: Superclass Person and its subclasses se --- 4.5
  2) https://gyansetu-java.gitbook.io/core-java/abstract/problems
  
+-- 5 july 2019---
+ 1) https://www.hackerrank.com/challenges/java-abstract-class/problem
+ 
+ --8 july 2019--
+ 1) 6.1 ntu
  
  
