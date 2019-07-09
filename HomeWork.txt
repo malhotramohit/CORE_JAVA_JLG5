@@ -115,3 +115,7 @@
  1) 6.1 ntu
  
  
+ --- july 9 2019---
+ 1) ntu 6.1 ) do in the same way put comments for CTE ) 15 min
+ 2) 6.2) ) 30 min
+ 3) https://gyansetu-java.gitbook.io/core-java/inheritance-pitfalls  ) 1 hr
