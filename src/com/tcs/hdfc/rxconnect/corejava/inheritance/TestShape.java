@@ -79,6 +79,20 @@ class Circle extends Shape {
 		return "Circle [radius=" + radius + ", color=" + color + ", filled=" + filled + "]";
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		boolean isSame = false;
+		if (obj instanceof Circle) {
+			Circle circle = (Circle) obj;
+			if (this.radius == circle.radius && this.color.equals(circle.color) && this.filled == circle.filled) {
+				isSame = true;
+			} else {
+				isSame = false;
+			}
+		}
+		return isSame;
+	}
+
 }
 
 class Rectangle extends Shape {
@@ -230,6 +244,14 @@ public class TestShape {
 			System.out.println(r5);
 		} else {
 			System.out.println("Not possible");
+		}
+
+		Circle circle1 = new Circle(1.2, "red", true);
+		Circle circle2 = new Circle(1.2, "red", true);
+		if (circle1.equals(circle2)) {
+			System.out.println("same");
+		} else {
+			System.out.println("not same");
 		}
 
 	}

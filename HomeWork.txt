@@ -119,3 +119,23 @@
  1) ntu 6.1 ) do in the same way put comments for CTE ) 15 min
  2) 6.2) ) 30 min
  3) https://gyansetu-java.gitbook.io/core-java/inheritance-pitfalls  ) 1 hr
+ 
+ 
+ --- 11 july 2019----
+ 
+ // Runtime polymorphism , method overriding, dynamic method dispatch
+// 1) Parent : concrete class (not an abs) , abstract, interface
+
+// 2) Parent par = new child();
+// 3) par can access only those things of child which are also present in parent 
+// 4) Use casting to get child obj out of parent ref var [ child ch =  (Child) par ]
+// 5) use instanceOf before doing casting 
+// if(par instanceOf Child){
+// [ child ch =  (Child) par ]
+// }
+// 6) One parent can be inherited by multiple children, 
+
+
+-- gitbook :
+https://gyansetu-core-java-for-java.gitbook.io/project/equals-and-hashcode
+1) Add or override equals method in all the classes and verify
