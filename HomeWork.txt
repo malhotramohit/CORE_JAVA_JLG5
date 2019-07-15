@@ -106,7 +106,7 @@
  
  -- 3 july 2019--
  1) 4.2  Ex: Superclass Person and its subclasses se --- 4.5
- 2) https://gyansetu-java.gitbook.io/core-java/abstract/problems
+ 2) https://gyansetu-java.gitbook.io/core-java/abstract/problemsz 
  
 -- 5 july 2019---
  1) https://www.hackerrank.com/challenges/java-abstract-class/problem
@@ -139,3 +139,7 @@
 -- gitbook :
 https://gyansetu-core-java-for-java.gitbook.io/project/equals-and-hashcode
 1) Add or override equals method in all the classes and verify
+
+--15 july 2019----
+1) practice all the ex quiz, w3cr
+2) https://practiceit.cs.washington.edu/problem/list
