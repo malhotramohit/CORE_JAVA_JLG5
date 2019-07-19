@@ -143,3 +143,7 @@ https://gyansetu-core-java-for-java.gitbook.io/project/equals-and-hashcode
 --15 july 2019----
 1) practice all the ex quiz, w3cr
 2) https://practiceit.cs.washington.edu/problem/list
+
+-- 17 july 2019---
+1) Complete all the functions of simple arrayList
+2) ComparableMax wala problem

@@ -10,9 +10,16 @@ interface SimpleList {
 
 	public void add(int index, Object element);
 
+	public void add(Object element);
+
 	public Object remove(int index);
 
+	public Object remove(Object obj);
+
 	public int size();
+
+	public void clear();
+
 }
 
 class SimpleArrayList implements SimpleList {
@@ -41,8 +48,8 @@ class SimpleArrayList implements SimpleList {
 	}
 
 	/**
-	 * This function will set the value at the given index 
-	 * Hint : kind of replacing the value
+	 * This function will set the value at the given index Hint : kind of replacing
+	 * the value
 	 */
 	public void set(int index, Object element) {
 
@@ -79,24 +86,45 @@ class SimpleArrayList implements SimpleList {
 		array = newArray;
 
 	}
+
 	/**
-	 * This function will remove the value at the given index and also will return the same.
-	 * Object valueToReturn = array[index]
-	 * [12, 34, 100, 18, 19]
-	 * index = 3
-	 * Copy values from 0-index-1 (inclusive) and index (Exclusive) - length into new array
-	 * array = newArray
-	 * return valueToReturn
+	 * This add will add the value at the end;
+	 */
+	public void add(Object element) {
+		// add value at the end
+		// index = array.length // 4: last index
+		add(array.length, element);
+	}
+
+	/**
+	 * This function will remove the value at the given index and also will return
+	 * the same. Object valueToReturn = array[index] [12, 34, 100, 18, 19] index = 3
+	 * Copy values from 0-index-1 (inclusive) and index (Exclusive) - length into
+	 * new array array = newArray return valueToReturn
 	 *
 	 */
 	public Object remove(int index) {
 		return null;
 	}
 
+	/**
+	 * This function will remove the value based on the object value passed
+	 */
+	public Object remove(Object obj) {
+		return null;
+	}
+
+	/**
+	 * This function will remove all the elements
+	 */
+	public void clear() {
+
+	}
+
 	public int size() {
 		return array.length;
 	}
-	
+
 	public String toString() {
 		return Arrays.toString(array);
 	}
@@ -126,6 +154,9 @@ public class TestSimpleArrayList {
 		System.out.println(simpleArrayList);
 		simpleArrayList.add(2, 100);
 		// 12 34 100 18 19
+		System.out.println(simpleArrayList);
+
+		simpleArrayList.add(90);
 		System.out.println(simpleArrayList);
 
 	}
