@@ -2,9 +2,11 @@ package com.tcs.hdfc.bancs.arraylist;
 
 import java.util.Arrays;
 
+import com.tcs.hdfc.rxconnect.corejava.exceptionhandling.ValueNotPresentException;
+
 interface SimpleList {
 	/* This will get the object at the given index */
-	public Object get(int index);
+	public Object get(int index) throws ValueNotPresentException;
 
 	public void set(int index, Object element);
 
@@ -36,11 +38,11 @@ class SimpleArrayList implements SimpleList {
 	}
 
 	/* This will get the object at the given index */
-	public Object get(int index) {
+	public Object get(int index) throws ValueNotPresentException {
 		// if index is invalid then return null : -ve or can out of range
 		// else return array[index]
 		if (index < 0 || index > array.length - 1) {
-			return null;
+			throw new ValueNotPresentException("The value is not present at the index " + index);
 		} else {
 			return array[index];
 
@@ -135,29 +137,36 @@ public class TestSimpleArrayList {
 
 	public static void main(String[] args) {
 
-		// way 1
-		Integer[] ageArray = { 12, 34, 18, 19 };
-		SimpleArrayList simpleArrayList = new SimpleArrayList(ageArray);
+		try {
+			// way 1
+			Integer[] ageArray = { 12, 34, 18, 19 };
+			SimpleArrayList simpleArrayList = new SimpleArrayList(ageArray);
 
-		Integer integer = (Integer) simpleArrayList.get(2);
-		Object age2 = simpleArrayList.get(3);
-		System.out.println(integer);
-		System.out.println(age2);
+			Integer integer = (Integer) simpleArrayList.get(2);
+			Object age2 = simpleArrayList.get(3);
+			System.out.println(integer);
+			System.out.println(age2);
 
-		// test case for invalid index
-		System.out.println(simpleArrayList.get(9));
-		// java.lang.ArrayIndexOutOfBoundsException: 9
+			// test case for invalid index
+			System.out.println(simpleArrayList.get(9));
+			// java.lang.ArrayIndexOutOfBoundsException: 9
 
-		System.out.println(simpleArrayList.get(-1));
-		System.out.println(simpleArrayList.get(4));
+			System.out.println(simpleArrayList.get(-1));
+			System.out.println(simpleArrayList.get(4));
 
-		System.out.println(simpleArrayList);
-		simpleArrayList.add(2, 100);
-		// 12 34 100 18 19
-		System.out.println(simpleArrayList);
+			System.out.println(simpleArrayList);
+			simpleArrayList.add(2, 100);
+			// 12 34 100 18 19
+			System.out.println(simpleArrayList);
 
-		simpleArrayList.add(90);
-		System.out.println(simpleArrayList);
+			simpleArrayList.add(90);
+			System.out.println(simpleArrayList);
+
+			System.out.println(simpleArrayList.get(-90));
+		} catch (ValueNotPresentException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Good bye it was great learning exception handling");
 
 	}
 
